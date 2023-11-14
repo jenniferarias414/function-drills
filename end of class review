@@ -1,0 +1,30 @@
+function deliver(package, destination) {
+    if(destination === "California") {
+        console.log(`your ${package} will be delivered in 3 days`)
+    } else if (destination === "NY") {
+        console.log(`your ${package} comes in 4 days`)
+    } else {
+        console.log(`your ${package} is lost`)
+    }
+}
+
+deliver("TV", "California") //arguments HAVE to be specific to what you want to process
+deliver("Book", "NY")
+deliver("TV", "California")
+deliver("pickle", "WI")
+
+
+let doritos = true
+
+let useBradyTV = () => {
+  console.log('Sure, you can use my super cool TV. Only cause you brought doritos. :)')
+}
+
+if(doritos){
+  useBradyTV()
+} else {
+  useBradyTV = () => {
+    console.log('Uhhh no, you cannot use my TV. Come back with doritos next time. Also, I can out squat you. :)')
+  }
+  useBradyTV()
+}
