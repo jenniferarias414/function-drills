@@ -419,7 +419,11 @@ let totalFrogs = frogPurchaser(100)
 */
 
 //CODE HERE
+function frogPurchaser2(gold) {
+  return Math.floor(gold / 3)
+}
 
+let totalFrogs2 = frogPurchaser2(100)
 
 ////////////////// PROBLEM 21 ////////////////////
 let sampleArray = [0,1,2,3,4,7,5,6,8,9]
